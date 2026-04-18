@@ -1,0 +1,162 @@
+<template>
+  <div class="mx-auto max-w-7xl px-4 pb-12 pt-6 md:px-6">
+    <section class="card-soft overflow-hidden p-6 md:p-8 lg:p-10">
+      <div class="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+        <div>
+          <div class="kicker">Welcome to BIP: Bergel Institute Philosophy</div>
+          <h1 class="mt-3 text-4xl font-semibold tracking-tight text-base-content md:text-5xl">
+            A careful app for reasoning better, observing better, and acting more humanely.
+          </h1>
+          <p class="mt-5 max-w-3xl text-base leading-8 text-base-content/75 md:text-lg">
+            BIP starts with something immediately useful: a fast checklist, two model claim pages,
+            and a 10-question scenario quiz. From there it expands into sensory training, reflective
+            practice, science literacy, health inquiry, and community-minded action without drifting
+            into pseudoscience.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <RouterLink class="btn btn-primary rounded-full" to="/start">Start here</RouterLink>
+            <RouterLink class="btn btn-outline rounded-full" to="/claim-pages">See model claim pages</RouterLink>
+            <RouterLink class="btn btn-ghost rounded-full" to="/references">Open references</RouterLink>
+          </div>
+          <div class="mt-8 grid gap-3 sm:grid-cols-3">
+            <div class="card-soft p-4">
+              <div class="text-2xl font-semibold text-primary">4</div>
+              <div class="mt-1 text-sm text-base-content/70">Immediate actions on the home path</div>
+            </div>
+            <div class="card-soft p-4">
+              <div class="text-2xl font-semibold text-primary">10</div>
+              <div class="mt-1 text-sm text-base-content/70">Scenario questions ready for a pilot cohort</div>
+            </div>
+            <div class="card-soft p-4">
+              <div class="text-2xl font-semibold text-primary">18+</div>
+              <div class="mt-1 text-sm text-base-content/70">Routes supporting present use plus roadmap growth</div>
+            </div>
+          </div>
+        </div>
+        <div class="card-soft p-5 md:p-6">
+          <div class="kicker">What the board sees first</div>
+          <div class="mt-4 space-y-3">
+            <div class="flex items-start gap-3 rounded-2xl bg-base-200/70 p-4">
+              <i class="fa-solid fa-list-check mt-1 text-primary"></i>
+              <div>
+                <div class="font-semibold">Start with the checklist</div>
+                <div class="text-sm text-base-content/70">Fast, practical, and grounded in evidence boundaries.</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 rounded-2xl bg-base-200/70 p-4">
+              <i class="fa-solid fa-file-circle-check mt-1 text-primary"></i>
+              <div>
+                <div class="font-semibold">Explore two model claim pages</div>
+                <div class="text-sm text-base-content/70">One shows careful skepticism, the other shows outcome-specific support.</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 rounded-2xl bg-base-200/70 p-4">
+              <i class="fa-solid fa-graduation-cap mt-1 text-primary"></i>
+              <div>
+                <div class="font-semibold">Take the scenario quiz</div>
+                <div class="text-sm text-base-content/70">A pilot-ready educational tool, not a decorative gimmick.</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 rounded-2xl bg-base-200/70 p-4">
+              <i class="fa-solid fa-users mt-1 text-primary"></i>
+              <div>
+                <div class="font-semibold">Join the pilot workflow</div>
+                <div class="text-sm text-base-content/70">Built for early users from the public and adjacent scientific communities.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-8">
+      <div class="mb-4 flex items-end justify-between gap-4">
+        <div>
+          <div class="kicker">Core routes</div>
+          <h2 class="section-title">Useful now, not just later</h2>
+        </div>
+      </div>
+      <RouteCards :cards="homeCards" />
+    </section>
+
+    <section class="mt-8 grid gap-6 lg:grid-cols-2">
+      <div class="content-panel">
+        <div class="kicker">The bridge</div>
+        <h2 class="mt-2 text-2xl font-semibold">First we reason better. Then we observe better.</h2>
+        <p class="mt-4 text-sm leading-7 text-base-content/75">
+          BIP is designed around a sequence: clarify claims, notice evidence boundaries, practice disciplined observation,
+          record lived experience carefully, and then ask better research questions. That keeps the app practical now while
+          preserving room for careful long-term inquiry into health, healing, awareness, and humane living.
+        </p>
+      </div>
+      <div class="content-panel">
+        <div class="kicker">Guardrails</div>
+        <ul class="space-y-3 text-sm leading-7 text-base-content/75">
+          <li><i class="fa-solid fa-check text-success"></i> Uses scientific words carefully.</li>
+          <li><i class="fa-solid fa-check text-success"></i> Distinguishes what is measured from what is meaningful.</li>
+          <li><i class="fa-solid fa-check text-success"></i> Keeps philosophical questions open without presenting them as settled facts.</li>
+          <li><i class="fa-solid fa-check text-success"></i> Preserves bold ideas by translating them into disciplined, testable, and ethical form.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</template>
+
+<script setup lang="ts">
+import RouteCards from '../components/RouteCards.vue'
+
+const homeCards = [
+  {
+    to: '/checklist',
+    title: 'Checklist',
+    text: 'Rapid tool for judging whether a claim is metaphorical, mechanistic, measured, or overstated.',
+    icon: 'fa-list-check',
+    badge: 'Core'
+  },
+  {
+    to: '/claim-pages',
+    title: 'Claim Pages',
+    text: 'Two flagship examples showing how BIP handles controversial and evidence-supported topics differently.',
+    icon: 'fa-file-circle-check',
+    badge: 'Core'
+  },
+  {
+    to: '/quiz',
+    title: 'Scenario Quiz',
+    text: 'Ten questions teaching no-signaling literacy, evidence updating, and AI source discipline.',
+    icon: 'fa-graduation-cap',
+    badge: 'Core'
+  },
+  {
+    to: '/research',
+    title: 'Pilot Workflow',
+    text: 'Pilot-ready path for early cohorts including scientifically literate users and public testers.',
+    icon: 'fa-users',
+    badge: 'Core'
+  },
+  {
+    to: '/sensory-training',
+    title: 'Sensory Training',
+    text: 'Five-sense and body-awareness practices framed as careful observation, not grandiose mechanism claims.',
+    icon: 'fa-seedling'
+  },
+  {
+    to: '/science-concepts',
+    title: 'Science Concepts',
+    text: 'Clear pages on magnetic field, electric field, frequency, evidence, placebo, and uncertainty.',
+    icon: 'fa-atom'
+  },
+  {
+    to: '/ai-literacy',
+    title: 'AI Literacy',
+    text: 'Explains what AI can and cannot do, why people fear it, and why source-backed reasoning matters.',
+    icon: 'fa-robot'
+  },
+  {
+    to: '/community',
+    title: 'Community + Sustainability',
+    text: 'Links awareness to food redistribution, reuse systems, inclusion, dignity, and practical social action.',
+    icon: 'fa-hand-holding-heart'
+  }
+]
+</script>

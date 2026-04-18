@@ -1,0 +1,84 @@
+export const sensoryTracks = [
+  {
+    id: 'vision',
+    title: 'Vision',
+    icon: 'fa-eye',
+    goal: 'Notice detail, motion, contrast, and attentional breadth without exaggerating perceptual claims.',
+    practices: [
+      'Fixed-gaze broad awareness: look forward and notice what enters peripheral awareness without chasing it.',
+      'Color and contrast scan: identify five colors or textures in the environment.',
+      'Outdoor visual pacing: alternate near and far focus while walking slowly.'
+    ],
+    caution: 'Do not practice while driving or in situations that require narrow task focus.'
+  },
+  {
+    id: 'hearing',
+    title: 'Hearing',
+    icon: 'fa-ear-listen',
+    goal: 'Improve listening quality, directional awareness, and tolerance for quiet or noisy environments.',
+    practices: [
+      'Three-layer listening: foreground, mid-distance, and far-distance sounds.',
+      'Eyes-closed listening in a safe setting for one minute.',
+      'Sound texture journaling: rhythm, tone, abruptness, repetition.'
+    ],
+    caution: 'Use blindfolded practice only with supervision or in a safe stationary setting.'
+  },
+  {
+    id: 'smell',
+    title: 'Smell',
+    icon: 'fa-wind',
+    goal: 'Use scent to sharpen environmental awareness and memory cues without claiming diagnosis or treatment.',
+    practices: [
+      'Kitchen smell map: compare herbs, citrus, coffee, or spices.',
+      'Outdoor scent notice: rain, plants, wood, traffic, clean air shifts.',
+      'Memory association reflection: which scent evokes comfort, alertness, or place?' 
+    ],
+    caution: 'Avoid allergens and strong irritants.'
+  },
+  {
+    id: 'touch',
+    title: 'Touch',
+    icon: 'fa-hand',
+    goal: 'Notice temperature, texture, pressure, and contact carefully and with consent.',
+    practices: [
+      'Texture ladder: cloth, wood, stone, metal, paper.',
+      'Warm–cool contrast with safe objects.',
+      'Partner touch exercise only with explicit boundaries and consent.'
+    ],
+    caution: 'Respect boundaries. Stop if any exercise feels unsafe or unwelcome.'
+  },
+  {
+    id: 'taste',
+    title: 'Taste',
+    icon: 'fa-utensils',
+    goal: 'Slow down eating enough to notice flavor, texture, expectation, and satiety.',
+    practices: [
+      'One-bite pause: notice first contact, chew pace, and aftertaste.',
+      'Expectation test: taste before naming.',
+      'Compare sweetness, bitterness, acidity, and texture.'
+    ],
+    caution: 'Keep food safety, allergies, and medical dietary needs in view.'
+  }
+]
+
+export const weeklyProgram = [
+  { week: 1, title: 'Week 1 · Vision', focus: 'Visual attention and calm wide-field noticing', mode: 'Beginner' },
+  { week: 2, title: 'Week 2 · Hearing', focus: 'Listening depth and sound layering', mode: 'Beginner' },
+  { week: 3, title: 'Week 3 · Smell', focus: 'Environmental scent awareness and memory links', mode: 'Beginner' },
+  { week: 4, title: 'Week 4 · Touch', focus: 'Texture, temperature, and consent-aware contact', mode: 'Beginner' },
+  { week: 5, title: 'Week 5 · Taste', focus: 'Mindful tasting and expectation effects', mode: 'Beginner' },
+  { week: 6, title: 'Week 6 · Vision + Hearing', focus: 'Two-channel attention', mode: 'Intermediate' },
+  { week: 7, title: 'Week 7 · Touch + Movement + Hearing', focus: 'Embodied orientation', mode: 'Intermediate' },
+  { week: 8, title: 'Week 8 · Multi-sensory integration', focus: 'Three to five senses in natural settings', mode: 'Workshop-ready' }
+]
+
+export const workshopExperiences = [
+  'Arrival reset: posture, breath, and safety framing',
+  'Silent visual field exercise',
+  'Layered listening exercise',
+  'Scent mapping in the environment',
+  'Texture and temperature station',
+  'Slow tasting station',
+  'Guided walking with two-sense integration',
+  'Group reflection and evidence-aware debrief'
+]

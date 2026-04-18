@@ -34,7 +34,6 @@
           </div>
         </div>
         <div class="card-soft p-5 md:p-6">
-          <div class="kicker">What the board sees first</div>
           <div class="mt-4 space-y-3">
             <div class="flex items-start gap-3 rounded-2xl bg-base-200/70 p-4">
               <i class="fa-solid fa-list-check mt-1 text-primary"></i>

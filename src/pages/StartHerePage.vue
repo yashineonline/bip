@@ -1,28 +1,22 @@
 <template>
   <PageFrame
     kicker="Start Here"
-    title="Four actions that prove the app is already useful"
-    summary="This path foregrounds the proposal-promised tools first, then opens the wider platform."
+    title="Four actions"
+    summary="From the proposal"
     :tags="['Checklist', 'Claim Pages', 'Scenario Quiz', 'Pilot']"
   >
-    <PageHero
-      kicker="Start Here"
-      title="Use the first useful layer before exploring the wider vision"
-      subtitle="The first interview-proof flow is simple: evaluate a claim, inspect two model pages, take the quiz, and see how the pilot is structured."
-    />
     <RouteCards :cards="cards" />
     <div class="mt-8 grid gap-6 md:grid-cols-2">
       <div class="card-soft p-5">
         <div class="kicker">Why this order</div>
         <p class="mt-3 text-sm leading-7 text-base-content/75">
-          The board should not have to hunt for the promised tools. BIP starts with concrete reasoning support,
-          because a trustworthy first layer makes the broader health-and-awareness layer easier to believe.
+          BIP starts with concrete reasoning support.
         </p>
       </div>
       <div class="card-soft p-5">
         <div class="kicker">What comes next</div>
         <p class="mt-3 text-sm leading-7 text-base-content/75">
-          After the first layer, the app expands into sensory observation, workshop delivery, journaling, optional
+          BIP intends to further expand into sensory observation, workshop delivery, journaling, optional
           research participation, science literacy, and community-minded modules.
         </p>
       </div>

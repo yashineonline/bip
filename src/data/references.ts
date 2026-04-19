@@ -195,7 +195,7 @@ export const references: ReferenceItem[] = [
     type: 'review',
     year: 2014,
     source: 'Cortex',
-    url: 'https://www.sciencedirect.com/science/article/pii/S0010945214000947',
+    url: 'https://virtualmmx.ddns.net/gbooks/TheOxfordHandbookofAttention.pdf',
     note: 'Useful background for explaining attention as selective processing rather than mystical enhancement.',
     topics: ['attention', 'vision', 'hearing']
   },

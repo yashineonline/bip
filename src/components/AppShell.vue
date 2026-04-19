@@ -69,7 +69,7 @@
         <div>
           <div class="font-semibold text-base-content">BIP: Bergel Institute Philosophy</div>
           <p class="mt-2 max-w-2xl leading-7">
-            A demo-ready, evidence-aware platform for claim evaluation, sensory observation, and humane inquiry.
+            An evidence-aware platform for claim evaluation, sensory observation, and humane inquiry.
             The app separates what is measurable now, what is personally meaningful, and what remains exploratory.
           </p>
         </div>
@@ -98,12 +98,12 @@ const navItems = [
   { label: 'Checklist', to: '/checklist' },
   { label: 'Claim Pages', to: '/claim-pages' },
   { label: 'Scenario Quiz', to: '/quiz' },
+  { label: 'Research', to: '/research' },
+  { label: 'Science Concepts', to: '/science-concepts' },
   { label: 'Sensory Training', to: '/sensory-training' },
   { label: 'Weekly Program', to: '/weekly-program' },
   { label: 'Workshop Mode', to: '/workshop-mode' },
   { label: 'Journal', to: '/journal' },
-  { label: 'Research', to: '/research' },
-  { label: 'Science Concepts', to: '/science-concepts' },
   { label: 'Modalities', to: '/alternative-modalities' },
   { label: 'Health Inquiry', to: '/health-healing' },
   { label: 'AI Literacy', to: '/ai-literacy' },

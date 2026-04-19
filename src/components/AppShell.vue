@@ -53,7 +53,7 @@
 <Transition name="fade-slide">
   <BackButton
     v-if="route.path !== '/'"
-    class="fixed left-4 top-20 z-50 lg:left-6 lg:top-24"
+    class="fixed left-4 top-16 z-50 lg:left-6 lg:top-20"
     fallback="/"
     label="Back"
   />

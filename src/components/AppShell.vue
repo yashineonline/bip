@@ -34,7 +34,31 @@
           <RouterLink to="/start" class="btn btn-primary btn-sm rounded-full">Open BIP</RouterLink>
         </div>
       </div>
+      <div class="mobile-tabs lg:hidden border-t border-base-300/70 bg-base-100/95">
+  <div class="overflow-x-auto px-4 py-2 [scrollbar-width:none] [-ms-overflow-style:none]">
+    <div class="flex min-w-max gap-2">
+      <RouterLink
+        v-for="item in navItems"
+        :key="`mobile-${item.to}`"
+        :to="item.to"
+        class="btn btn-sm rounded-full border border-base-300 bg-base-100 text-base-content whitespace-nowrap shadow-sm"
+      >
+        {{ item.label }}
+      </RouterLink>
+    </div>
+  </div>
+</div>
     </header>
+
+<Transition name="fade-slide">
+  <BackButton
+    v-if="route.path !== '/'"
+    class="fixed left-4 top-20 z-50 lg:left-6 lg:top-24"
+    fallback="/"
+    label="Back"
+  />
+</Transition>
+    
 
     <main>
       <RouterView />
@@ -63,6 +87,11 @@
 </template>
 
 <script setup lang="ts">
+import { useRoute } from 'vue-router'
+import BackButton from './BackButton.vue'
+
+const route = useRoute()
+  
 const navItems = [
   { label: 'Home', to: '/' },
   { label: 'Start Here', to: '/start' },

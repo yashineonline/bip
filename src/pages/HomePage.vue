@@ -72,7 +72,6 @@
       <div class="mb-4 flex items-end justify-between gap-4">
         <div>
           <div class="kicker">Core routes</div>
-          <h2 class="section-title">Useful now, not just later</h2>
         </div>
       </div>
       <RouteCards :cards="homeCards" />

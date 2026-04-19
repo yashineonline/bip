@@ -26,7 +26,7 @@
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal gap-1 rounded-full bg-base-200/70 px-2 py-1">
-            <li v-for="item in navItems.slice(0, 7)" :key="item.to"><RouterLink :to="item.to">{{ item.label }}</RouterLink></li>
+            <li v-for="item in navItems.slice(0, 10)" :key="item.to"><RouterLink :to="item.to">{{ item.label }}</RouterLink></li>
           </ul>
         </div>
         <div class="navbar-end gap-2">

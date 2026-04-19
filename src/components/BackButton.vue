@@ -1,5 +1,8 @@
 <template>
-  <button class="btn btn-ghost btn-sm rounded-full" @click="goBack">
+<button
+  class="btn btn-sm rounded-full border border-base-300/80 bg-base-100/95 text-base-content shadow-md backdrop-blur hover:border-primary/40 hover:bg-primary hover:text-primary-content"
+  @click="goBack"
+>
     <i class="fa-solid fa-arrow-left"></i>
     <span>{{ label }}</span>
   </button>

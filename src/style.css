@@ -6,26 +6,37 @@
   default: true;
   prefersdark: false;
   color-scheme: light;
-  --color-base-100: oklch(98% 0.008 235);
-  --color-base-200: oklch(95% 0.01 235);
-  --color-base-300: oklch(90% 0.015 235);
-  --color-base-content: oklch(27% 0.03 240);
-  --color-primary: oklch(42% 0.09 235);
+
+  --color-base-100: oklch(99% 0.006 235);
+  --color-base-200: oklch(96% 0.008 235);
+  --color-base-300: oklch(90% 0.012 235);
+  --color-base-content: oklch(22% 0.03 240);
+
+  --color-primary: oklch(45% 0.11 235);
   --color-primary-content: oklch(98% 0.01 235);
-  --color-secondary: oklch(60% 0.11 185);
-  --color-secondary-content: oklch(17% 0.02 200);
-  --color-accent: oklch(78% 0.08 85);
+
+  --color-secondary: oklch(56% 0.10 185);
+  --color-secondary-content: oklch(98% 0.01 185);
+
+  --color-accent: oklch(82% 0.10 85);
   --color-accent-content: oklch(20% 0.04 85);
-  --color-neutral: oklch(31% 0.02 250);
-  --color-neutral-content: oklch(96% 0.01 240);
-  --color-info: oklch(72% 0.08 230);
-  --color-info-content: oklch(24% 0.03 235);
-  --color-success: oklch(75% 0.1 155);
-  --color-success-content: oklch(21% 0.03 160);
-  --color-warning: oklch(83% 0.12 80);
-  --color-warning-content: oklch(25% 0.05 80);
-  --color-error: oklch(68% 0.16 28);
-  --color-error-content: oklch(20% 0.05 28);
+
+  --color-neutral: oklch(28% 0.02 250);
+  --color-neutral-content: oklch(97% 0.01 240);
+
+  --color-info: oklch(67% 0.10 230);
+  --color-info-content: oklch(98% 0.01 230);
+
+  --color-success: oklch(63% 0.13 155);
+  --color-success-content: oklch(98% 0.01 155);
+
+  --color-warning: oklch(79% 0.12 80);
+  --color-warning-content: oklch(22% 0.05 80);
+
+  --color-error: oklch(60% 0.16 28);
+  --color-error-content: oklch(98% 0.01 28);
+
+  
   --radius-selector: 1rem;
   --radius-field: 0.75rem;
   --radius-box: 1.25rem;
@@ -96,4 +107,42 @@ body {
 
 .callout {
   @apply rounded-2xl border border-info/20 bg-info/10 p-4 text-sm leading-7 text-info-content;
+}
+
+body,
+#app,
+.content-panel,
+.side-panel,
+.card-soft {
+  color: var(--color-base-content);
+}
+
+.btn-ghost,
+.btn-outline,
+.menu li > *:not(ul):not(.menu-title),
+.mobile-tabs .btn {
+  color: var(--color-base-content);
+}
+
+.menu li > .router-link-active,
+.menu li > a.router-link-active,
+.mobile-tabs .router-link-active {
+  background: var(--color-primary);
+  color: var(--color-primary-content);
+  border-color: var(--color-primary);
+}
+
+.mobile-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.fade-slide-enter-active,
+.fade-slide-leave-active {
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.fade-slide-enter-from,
+.fade-slide-leave-to {
+  opacity: 0;
+  transform: translateY(-8px);
 }

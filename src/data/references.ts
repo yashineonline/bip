@@ -158,7 +158,7 @@ export const references: ReferenceItem[] = [
   {
     id: 'ref-chatgpt-developed',
     short: 'OpenAI Help: model development',
-    title: 'How ChatGPT and our language models are developed',
+    title: 'How ChatGPT and their language models are developed',
     type: 'official documentation',
     year: 2026,
     source: 'OpenAI Help Center',

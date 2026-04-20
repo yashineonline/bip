@@ -35,6 +35,17 @@ export const references: ReferenceItem[] = [
     topics: ['magnetic field', 'electric field', 'frequency']
   },
   {
+    id: 'ref-microwave-ncbi',
+    short: 'PubMed Central, 2022',
+    title: 'Microwave Radiation and the Brain',
+    type: 'government / public health',
+    year: 2022,
+    source: 'National Library of Medicine',
+    url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC9409438/',
+    note: 'Positive, Neutral and Negative Effects of Microwave Radiation.',
+    topics: ['microwave', 'electromagnetic field', 'frequency', 'science concepts']
+  },
+  {
     id: 'ref-interoception-craig',
     short: 'Craig, 2002',
     title: 'How do you feel? Interoception: the sense of the physiological condition of the body',

@@ -38,11 +38,11 @@ export const references: ReferenceItem[] = [
     id: 'ref-microwave-ncbi',
     short: 'PubMed Central, 2022',
     title: 'Microwave Radiation and the Brain',
-    type: 'government / public health',
+    type: ['government / public health', 'peer-reviewed'],
     year: 2022,
     source: 'National Library of Medicine',
     url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC9409438/',
-    note: 'Positive, Neutral and Negative Effects of Microwave Radiation.',
+    note: 'Positive, neutral and negative effects of microwave radiation.',
     topics: ['microwave', 'electromagnetic field', 'frequency', 'science concepts']
   },
   {

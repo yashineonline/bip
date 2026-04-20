@@ -145,39 +145,6 @@ export const references: ReferenceItem[] = [
     topics: ['pain', 'alternative modalities', 'evidence']
   },
   {
-    id: 'ref-chatgpt-help',
-    short: 'OpenAI Help: What is ChatGPT?',
-    title: 'What is ChatGPT?',
-    type: 'official documentation',
-    year: 2026,
-    source: 'OpenAI Help Center',
-    url: 'https://help.openai.com/en/articles/6783457-what-is-chatgpt',
-    note: 'Plain-language explanation of the service and its basic training approach.',
-    topics: ['ai literacy']
-  },
-  {
-    id: 'ref-chatgpt-developed',
-    short: 'OpenAI Help: model development',
-    title: 'How ChatGPT and their language models are developed',
-    type: 'official documentation',
-    year: 2026,
-    source: 'OpenAI Help Center',
-    url: 'https://help.openai.com/en/articles/7842364-how-chatgpt-and-our-language-models-are-developed',
-    note: 'Helpful for explaining training data, pattern learning, and the limits of model behavior.',
-    topics: ['ai literacy']
-  },
-  {
-    id: 'ref-openai-safety',
-    short: 'OpenAI safety approach',
-    title: 'Our approach to AI safety',
-    type: 'official documentation',
-    year: 2026,
-    source: 'OpenAI',
-    url: 'https://openai.com/index/our-approach-to-ai-safety/',
-    note: 'Supports discussion of transparency, limitations, and safeguards.',
-    topics: ['ai literacy', 'safety']
-  },
-  {
     id: 'ref-nccih-neurobio',
     short: 'NCCIH neurobiological mechanisms',
     title: 'Neurobiological Effects and Mechanisms',
@@ -231,6 +198,39 @@ export const references: ReferenceItem[] = [
     url: 'https://www.who.int/health-topics/mental-health',
     note: 'Included as a boundary marker to remind users that some topics are best framed as reflective or cultural rather than evidentially established interventions.',
     topics: ['past life regression', 'alternative modalities']
+  },
+    {
+    id: 'ref-chatgpt-help',
+    short: 'OpenAI Help: What is ChatGPT?',
+    title: 'What is ChatGPT?',
+    type: 'official documentation',
+    year: 2026,
+    source: 'OpenAI Help Center',
+    url: 'https://help.openai.com/en/articles/6783457-what-is-chatgpt',
+    note: 'Plain-language explanation of the service and its basic training approach.',
+    topics: ['ai literacy']
+  },
+  {
+    id: 'ref-chatgpt-developed',
+    short: 'OpenAI Help: model development',
+    title: 'How ChatGPT and their language models are developed',
+    type: 'official documentation',
+    year: 2026,
+    source: 'OpenAI Help Center',
+    url: 'https://help.openai.com/en/articles/7842364-how-chatgpt-and-our-language-models-are-developed',
+    note: 'Helpful for explaining training data, pattern learning, and the limits of model behavior.',
+    topics: ['ai literacy']
+  },
+  {
+    id: 'ref-openai-safety',
+    short: 'OpenAI safety approach',
+    title: 'Our approach to AI safety',
+    type: 'official documentation',
+    year: 2026,
+    source: 'OpenAI',
+    url: 'https://openai.com/index/our-approach-to-ai-safety/',
+    note: 'Supports discussion of transparency, limitations, and safeguards.',
+    topics: ['ai literacy', 'safety']
   }
 ]
 

@@ -5,7 +5,9 @@
     summary="This module protects users from being impressed by scientific words that are never operationally explained."
     :tags="['Magnetic field', 'Electric field', 'Frequency', 'Placebo', 'Evidence']"
   >
-    <PageHero kicker="Science literacy" title="Define terms before making them carry a worldview" subtitle="BIP does not ban difficult words. It asks whether they are being used operationally, metaphorically, or rhetorically." />
+    <PageHero kicker="Science literacy" 
+      title="Define scientific terms for general public" 
+      subtitle="BIP does not ban difficult words. It asks whether they are being used operationally, metaphorically, or rhetorically." />
 
     <div class="grid gap-4 xl:grid-cols-2">
       <div v-for="concept in concepts" :key="concept.title" class="card-soft p-5">

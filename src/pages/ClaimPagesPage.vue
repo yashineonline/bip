@@ -7,7 +7,7 @@
   >
     <PageHero
       kicker="Claim Pages"
-      title="Model pages built for credibility, not hype"
+      title="Model pages"
       subtitle="Each page includes a one-sentence claim, evidence grade, charitable interpretation, critique, misuse pattern, safety note, and update rule."
     />
     <div class="grid gap-4 md:grid-cols-2">

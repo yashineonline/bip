@@ -21,7 +21,7 @@
           <div class="mt-8 grid gap-3 sm:grid-cols-3">
             <div class="card-soft p-4">
               <div class="text-2xl font-semibold text-primary">4</div>
-              <div class="mt-1 text-sm text-base-content/70">Immediate actions on the home path</div>
+              <div class="mt-1 text-sm text-base-content/70">Immediate actions</div>
             </div>
             <div class="card-soft p-4">
               <div class="text-2xl font-semibold text-primary">10</div>
@@ -53,7 +53,7 @@
               <i class="fa-solid fa-graduation-cap mt-1 text-primary"></i>
               <div>
                 <div class="font-semibold">Take the scenario quiz</div>
-                <div class="text-sm text-base-content/70">A pilot-ready educational tool, not a decorative gimmick.</div>
+                <div class="text-sm text-base-content/70">A pilot-ready educational tool.</div>
               </div>
             </div>
             <div class="flex items-start gap-3 rounded-2xl bg-base-200/70 p-4">

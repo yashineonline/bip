@@ -22,7 +22,9 @@
             <div class="font-semibold text-base-content">{{ item.title }}</div>
             <p class="mt-1 text-sm leading-7 text-base-content/70">{{ item.help }}</p>
           </div>
-          <span class="badge badge-outline rounded-full">{{ item.weight }} pts</span>
+          <span class="inline-flex min-w-[3.5rem] items-center justify-center rounded-full border border-base-300/80 px-3 py-1 text-sm font-medium leading-none text-base-content/85">
+  {{ item.weight }} pts
+</span>
         </div>
         <div class="mt-4 flex flex-wrap gap-2">
           <button

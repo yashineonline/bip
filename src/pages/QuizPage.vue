@@ -7,7 +7,7 @@
   >
     <PageHero
       kicker="Scenario Quiz"
-      title="Train distinctions that matter"
+      title="Mixed Topics"
       subtitle="The quiz covers metaphor versus mechanism, no-signaling literacy, evidence updating, theory versus interpretation, and AI confidence versus source-backed accuracy."
     >
       <template #actions>

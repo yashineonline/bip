@@ -98,7 +98,9 @@ body {
 }
 
 .badge-soft {
-  @apply badge badge-outline rounded-full border-primary/25 bg-primary/5 px-3 py-3 text-primary;
+  @apply inline-flex items-center rounded-full border border-primary/25 bg-primary/10 px-3 py-1.5 text-sm font-medium leading-snug text-primary;
+  white-space: normal;
+  max-width: 10rem;
 }
 
 .ref-link {

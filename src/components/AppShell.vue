@@ -25,10 +25,26 @@
           </RouterLink>
         </div>
         <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal gap-1 rounded-full bg-base-200/70 px-2 py-1">
-            <li v-for="item in navItems.slice(0, 7)" :key="item.to"><RouterLink :to="item.to">{{ item.label }}</RouterLink></li>
-          </ul>
-        </div>
+  <ul class="menu menu-horizontal gap-1 rounded-full bg-base-200/70 px-2 py-1">
+    <li v-for="item in primaryNavItems" :key="item.to">
+      <RouterLink :to="item.to">{{ item.label }}</RouterLink>
+    </li>
+
+    <li>
+      <details>
+        <summary>More</summary>
+        <ul class="z-[60] mt-3 w-64 rounded-2xl border border-base-300 bg-base-100 p-2 shadow-xl">
+          <li v-for="item in moreNavItems" :key="item.to">
+            <RouterLink :to="item.to">{{ item.label }}</RouterLink>
+          </li>
+        </ul>
+      </details>
+    </li>
+  </ul>
+</div>
+
+
+        
         <div class="navbar-end gap-2">
           <RouterLink to="/references" class="btn btn-ghost btn-sm hidden md:inline-flex">References</RouterLink>
           <RouterLink to="/start" class="btn btn-primary btn-sm rounded-full">Open BIP</RouterLink>
@@ -111,4 +127,30 @@ const navItems = [
   { label: 'References', to: '/references' },
   { label: 'Settings', to: '/settings' }
 ]
+
+  const primaryNavItems = [
+  { label: 'Home', to: '/' },
+  { label: 'Start Here', to: '/start' },
+  { label: 'Checklist', to: '/checklist' },
+  { label: 'Claim Pages', to: '/claim-pages' },
+  { label: 'Scenario Quiz', to: '/quiz' },
+  { label: 'Research', to: '/research' },
+  { label: 'Science Concepts', to: '/science-concepts' }
+]
+
+const moreNavItems = [
+  { label: 'Sensory Training', to: '/sensory-training' },
+  { label: 'Weekly Program', to: '/weekly-program' },
+  { label: 'Workshop Mode', to: '/workshop-mode' },
+  { label: 'Journal', to: '/journal' },
+  { label: 'Modalities', to: '/alternative-modalities' },
+  { label: 'Health Inquiry', to: '/health-healing' },
+  { label: 'AI Literacy', to: '/ai-literacy' },
+  { label: 'Community', to: '/community' },
+  { label: 'Settings', to: '/settings' }
+]
+
+
+
+  
 </script>
